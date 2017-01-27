@@ -7,7 +7,7 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class DataService {
-    private dbServiceUrl = 'http://ec2-54-93-99-40.eu-central-1.compute.amazonaws.com/measurements'; //'http://localhost:3000/measurements';
+    private dbServiceUrl = 'http://localhost:3000/measurements';
 
     constructor(private http: Http) { }
 

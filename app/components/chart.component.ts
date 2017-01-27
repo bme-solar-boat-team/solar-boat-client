@@ -7,7 +7,7 @@ const Highcharts = require('highcharts');
 @Component({
     selector: 'my-chart',
     template: `<chart [options]="optionsDolesszog"></chart>
-    <chart [options]="optionsETA"></chart>`,
+                <chart [options]="optionsETA"></chart>`,
 })
 export class ChartComponent implements OnInit {
     data: any;
