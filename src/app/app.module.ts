@@ -1,23 +1,23 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
 import { HttpModule }    from '@angular/http';
 import { ChartModule } from 'angular2-highcharts';
 
-import { AppComponent }  from './app.component';
+import { AppComponent } from './app.component';
 import { ChartComponent } from './components/chart.component';
 import { DataService } from './services/data.service';
 
 @NgModule({
-  imports: [ 
+  imports: [
     BrowserModule,
     HttpModule,
-    ChartModule 
+    ChartModule.forRoot(require('highcharts'))
   ],
-  declarations: [ 
+  declarations: [
     AppComponent,
     ChartComponent
   ],
   providers: [ DataService ],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataService } from '../services/data.service';
 
-const Highcharts = require('highcharts');
+//import { DataService } from '../services/data.service';
+
+const Highcharts = require('../../../node_modules/highcharts/highstock.src');
 
 @Component({
     selector: 'my-chart',
